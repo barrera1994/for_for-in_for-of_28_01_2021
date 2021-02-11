@@ -1,15 +1,14 @@
-let lista = ["miguel", "andrea", "diana", "adrian", "diego", "julian"];
-let edad = [23,16,37,50,37,27];
-let info = [];
+let numero = parseInt(prompt(`Ingrese un numero entre 1 y 2`));
+switch (numero) {
+     case 1:
+        console.log(`Opcion 1`);
+        break;
+    case 2:
+        console.log(`Opcion 2`);
+        break;
 
-for (let i = 0; i < lista.length; i++) {
-    info[i] = {name : lista[i], edad : edad[i]};
+    default:
+        console.log(`Opcion invalida`);
+        break;
 }
-console.log(info);
 
-for(let id in lista){
-    console.log(`La posicion de la lista es ${id}`);
-}
-for(let valor of lista){
-    console.log(`y su valor es ${valor}`);  
-}
